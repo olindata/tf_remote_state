@@ -7,7 +7,7 @@ buckets for environments.
 
 ```hcl
 module "remote_state" {
-  source = "github.com/turnbullpublishing/tf_remote_state"
+  source = "github.com/olindata/tf_remote_state"
   environment = "development"
 }
 ```
