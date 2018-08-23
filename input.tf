@@ -16,3 +16,7 @@ variable "tags" {
 variable "authorised_accountid" {
   description = "an accountid of an account that needs to be able to access this bucket"
 }
+
+variable "create_cross_account_policy" {
+  description = "wether or not to create the cross account permissions on the s3 bucket that holds the terraform state"
+}

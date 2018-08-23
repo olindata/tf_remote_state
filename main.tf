@@ -11,6 +11,8 @@ resource "aws_s3_bucket" "remote_state" {
 }
 
 resource "aws_s3_bucket_policy" "remote_state_cross_account" {
+  count = "${var.create_cross_account_policy}"
+
   bucket = "${aws_s3_bucket.remote_state.id}"
 
   policy = <<POLICY
